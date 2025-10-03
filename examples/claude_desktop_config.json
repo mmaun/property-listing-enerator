@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "property-listing-generator": {
+      "command": "npx",
+      "args": ["-y", "property-listing-generator-mcp"],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
+      }
+    }
+  }
+}
+

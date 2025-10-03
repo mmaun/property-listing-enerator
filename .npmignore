@@ -1,0 +1,11 @@
+src/
+examples/
+*.log
+.DS_Store
+tsconfig.json
+.git
+.gitignore
+node_modules/
+*.pdf
+.env
+

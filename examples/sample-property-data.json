@@ -1,0 +1,56 @@
+{
+  "sampleProperty1": {
+    "address": "123 Main Street, San Francisco, CA 94102",
+    "propertyType": "House",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1800,
+    "price": "$1,200,000",
+    "features": [
+      "Renovated Chef's Kitchen with Stainless Steel Appliances",
+      "Original Hardwood Floors Throughout",
+      "Private Backyard Garden with Deck",
+      "Detached 1-Car Garage",
+      "Updated Bathrooms with Modern Fixtures",
+      "Crown Molding and Period Details",
+      "Central Heating and Air Conditioning"
+    ]
+  },
+  "sampleProperty2": {
+    "address": "456 Ocean Avenue, Miami Beach, FL 33139",
+    "propertyType": "Condo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareFeet": 1400,
+    "price": "$875,000",
+    "features": [
+      "Stunning Ocean Views from Floor-to-Ceiling Windows",
+      "Modern Open Floor Plan",
+      "Gourmet Kitchen with Quartz Countertops",
+      "Master Suite with Walk-in Closet",
+      "In-Unit Washer and Dryer",
+      "Building Amenities: Pool, Gym, Concierge",
+      "Secure Parking Space Included",
+      "Steps from the Beach"
+    ]
+  },
+  "sampleProperty3": {
+    "address": "789 Mountain View Road, Boulder, CO 80302",
+    "propertyType": "Townhouse",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "squareFeet": 2200,
+    "price": "$725,000",
+    "features": [
+      "Spectacular Mountain Views",
+      "Three-Level Living with Private Rooftop Deck",
+      "Upgraded Kitchen with Granite Counters",
+      "Spacious Master Suite with En-Suite Bath",
+      "Home Office/Den on Main Level",
+      "Attached 2-Car Garage",
+      "Energy Efficient with Solar Panels",
+      "Walking Distance to Trails and Parks"
+    ]
+  }
+}
+
