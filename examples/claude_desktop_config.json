@@ -4,9 +4,20 @@
       "command": "npx",
       "args": ["-y", "property-listing-generator-mcp"],
       "env": {
-        "GOOGLE_MAPS_API_KEY": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
+        "GOOGLE_MAPS_API_KEY": "paste-your-actual-google-maps-api-key-here"
       }
     }
   }
 }
+
+// Instructions:
+// 1. Get your Google Maps API key from https://console.cloud.google.com/
+// 2. Enable Geocoding API and Places API
+// 3. Replace "paste-your-actual-google-maps-api-key-here" with your actual API key
+// 4. Save this file to:
+//    - MacOS: ~/Library/Application Support/Claude/claude_desktop_config.json
+//    - Windows: %APPDATA%\Claude\claude_desktop_config.json
+// 5. Restart Claude Desktop
+// 
+// The MCP server will automatically download and run via npx!
 

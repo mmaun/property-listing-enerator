@@ -2,6 +2,19 @@
 
 A Model Context Protocol (MCP) server that helps real estate professionals generate compelling property listings with AI-enhanced descriptions, local information from Google Maps, and professional PDF brochures.
 
+[![npm version](https://img.shields.io/npm/v/property-listing-generator-mcp.svg)](https://www.npmjs.com/package/property-listing-generator-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Quick Start
+
+```bash
+# No installation needed! Just configure in Claude Desktop:
+npx property-listing-generator-mcp
+```
+
+**NPM Package**: [property-listing-generator-mcp](https://www.npmjs.com/package/property-listing-generator-mcp)  
+**GitHub**: [property-listing-enerator](https://github.com/mmaun/property-listing-enerator)
+
 ## Features
 
 - 🏠 **AI-Enhanced Property Descriptions**: Generate appealing, professional property descriptions
@@ -12,9 +25,21 @@ A Model Context Protocol (MCP) server that helps real estate professionals gener
 
 ## Installation
 
-### Via NPX (Recommended)
+### Via NPX (Recommended) ⚡
 
-The easiest way to use this MCP server is via npx. Add the following to your Claude Desktop configuration file:
+The easiest way to use this MCP server is via **npx** - no installation required! The package is published on NPM as [`property-listing-generator-mcp`](https://www.npmjs.com/package/property-listing-generator-mcp).
+
+#### Step 1: Get Your Google Maps API Key
+
+1. Visit [Google Cloud Console](https://console.cloud.google.com/)
+2. Create a new project
+3. Enable **Geocoding API** and **Places API**
+4. Create an API Key under Credentials
+5. Copy your API key
+
+#### Step 2: Configure Claude Desktop
+
+Add the following to your Claude Desktop configuration file:
 
 **MacOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
 **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
@@ -26,19 +51,36 @@ The easiest way to use this MCP server is via npx. Add the following to your Cla
       "command": "npx",
       "args": ["-y", "property-listing-generator-mcp"],
       "env": {
-        "GOOGLE_MAPS_API_KEY": "your-google-maps-api-key-here"
+        "GOOGLE_MAPS_API_KEY": "paste-your-actual-api-key-here"
       }
     }
   }
 }
 ```
 
-### Manual Installation
+**Important**: Replace `paste-your-actual-api-key-here` with your actual Google Maps API key from Step 1.
+
+#### Step 3: Restart Claude Desktop
+
+Close and reopen Claude Desktop completely. The MCP server will automatically be downloaded and started via npx on first use.
+
+#### Step 4: Start Using It!
+
+Open a conversation in Claude and try:
+```
+Generate a property listing for 123 Main Street, San Francisco, CA 94102
+```
+
+That's it! The server will automatically download and run via npx - no manual installation needed.
+
+### Manual Installation (Advanced)
+
+If you want to run from source or contribute to development:
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
-cd property-ad-generator
+git clone https://github.com/mmaun/property-listing-enerator.git
+cd property-listing-enerator
 ```
 
 2. Install dependencies:
@@ -57,7 +99,7 @@ npm run build
   "mcpServers": {
     "property-listing-generator": {
       "command": "node",
-      "args": ["/absolute/path/to/property-ad-generator/build/index.js"],
+      "args": ["/absolute/path/to/property-listing-enerator/build/index.js"],
       "env": {
         "GOOGLE_MAPS_API_KEY": "your-google-maps-api-key-here"
       }
@@ -65,6 +107,8 @@ npm run build
   }
 }
 ```
+
+**Note**: Most users should use the NPX method above instead of manual installation.
 
 ## Google Maps API Key
 

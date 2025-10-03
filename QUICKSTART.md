@@ -14,6 +14,8 @@ Get up and running with the Property Listing Generator MCP Server in 5 minutes!
 
 ## Step 2: Configure Claude Desktop
 
+The package is now published on NPM as [`property-listing-generator-mcp`](https://www.npmjs.com/package/property-listing-generator-mcp)!
+
 ### MacOS
 Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
 
@@ -29,14 +31,16 @@ Add this configuration:
       "command": "npx",
       "args": ["-y", "property-listing-generator-mcp"],
       "env": {
-        "GOOGLE_MAPS_API_KEY": "paste-your-api-key-here"
+        "GOOGLE_MAPS_API_KEY": "paste-your-actual-api-key-here"
       }
     }
   }
 }
 ```
 
-**Important**: Replace `paste-your-api-key-here` with your actual Google Maps API key!
+**Important**: Replace `paste-your-actual-api-key-here` with your actual Google Maps API key!
+
+The `-y` flag tells npx to automatically download and use the package without prompting.
 
 ## Step 3: Restart Claude Desktop
 
